@@ -8,6 +8,7 @@ export function Publish(){
     const [text, setText] = useState("")
     const id = 24
     function createPublish(){
+        
         try{
             api.post("/publish", {text, id})
             .then((res) => {
