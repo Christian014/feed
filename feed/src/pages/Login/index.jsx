@@ -19,11 +19,11 @@ export function Login(){
 
             console.log(res.status)
 
-            if(res.data.statuscode === 200){
-                return alert("login");
-            }else{
+            if(res.data.statuscode === 404){
                 return alert("Email e/ou Senha Inválido");
             }
+                return alert("login");
+            
 
         }catch(err){
             console.log("err", err)
